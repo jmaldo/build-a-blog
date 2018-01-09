@@ -20,7 +20,7 @@ class Blog(db.Model):
         self.post_title = title
         self.post_body = body
 
-@app.route('/blog', methods = ['POST','GET'])
+@app.route('/', methods = ['POST','GET'])
 def index():
 
     posts = Blog.query.all()
